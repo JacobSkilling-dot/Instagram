@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: sans-serif;
+
+    min-height: 100vh;
+}
+
+.content{
+  /* set as flex container for left/right items*/
+  display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+}
+  
+  .phone {
+    position: flex;
+    margin-right: 30px;
+    max-width: 414px;
+  }
+
+  .left-section {
+    margin: 20px;
+  }
+  
+  .right-panel {
+    display: flex;
+    width: 360px;
+    border-radius: 3px;
+    padding: 30px 40px;
+    margin: 10px 0;
+    display: flex;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    border: 1px solid #e8e1e1;
+  }
+  
+  .loginpage {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .textbox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 20px;
+  }
+  
+  .login-button {
+    margin: 10px;
+    padding: 7px;
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  .divider {
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+    color: #8a8a8a;
+    font-weight: bold;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #8a8a8a;
+  }
+
+
+  .forgot-password {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .facebook {
+    margin: 20px 0;
+    color: #3b5998;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  
+  .sign-up {
+    text-decoration: none;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    align-items: center;
+  }
+  
+  .sign-up a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3bb1ff;
+  }
+  
+  .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    font-size: 15px;
+    margin: 15px;
+  }
+  
+  .app-stores {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+
+  li, a {
+    text-decoration: white;
+    color: #9c9c9c;
+  }
+  
+  footer {
+    max-width: 60em;
+    margin-bottom: 40px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+
+    gap: 13px;
+    margin: 15px;
+  }
+
+
+/* smartphone */
+    @media only screen and (max-width: 414px){
+      .left-section {display: none;}
+    }
+/* ipad */
+      @media only screen and (max-width: 875px){
+        .left-section {display: none;}
+      }
